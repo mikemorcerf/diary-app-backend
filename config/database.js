@@ -1,13 +1,15 @@
+require('dotenv').config();
+
 module.exports = {
-  username: process.env.ENV_DB_USER,
-  password: process.env.ENV_DB_PASS,
-  database: process.env.ENV_DB_NAME,
-  storage: process.env.DATABASE_URL,
-  url: process.env.DATABASE_URL,
-  host: process.env.ENV_DB_HOST,
-  port: process.env.ENV_DB_PORT,
+  username: process.env.ENV_DB_USER_DEV,
+  password: process.env.ENV_DB_PASS_DEV,
+  database: process.env.ENV_DB_NAME_DEV,
+  // storage: process.env.DATABASE_URL,
+  // url: process.env.DATABASE_URL,
+  // host: 'localhost',
+  // port: '5434',
   dialect: 'postgres',
   type: 'postgres',
   protocol: 'postgres',
-  migrationsRun: true
+  // migrationsRun: true
 }
