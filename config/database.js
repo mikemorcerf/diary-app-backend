@@ -20,8 +20,10 @@ module.exports = {
     username: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
     port: process.env.DATABASE_PORT,
-    URI: process.env.
-    DATABASE_URI,
+    URI: process.env.DATABASE_URI,
+    dialect: 'postgres',
+    type: 'postgres',
+    protocol: 'postgres',
     // use_env_variable: process.env.DATABASE_URL
   }
 }
